@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="loginBox"> 
+    <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+    <h3>Sign in here</h3>
+    <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+        <div class="inputBox">
+            <input id="uname" type="text" name="name" placeholder="Enter Name">
+            <input id="num" type="number" name="mobile" placeholder="Enter Mobile number">
+            <input id="pass" type="password" name="password" placeholder="Password">
+            <input id="cpass" type="password" name="cpswd" placeholder="confirm-password">
+            <div class="one-line">
+                <p class="img">Upload image:</p>
+                <input type="file" name="photo" >
+            </div>
+            <select name="role" id="dropbox">
+                <option value="1">Voter</option>
+                <option value="2">group</option>
+            </select>
+        </div>
+        <input type="submit" name="register" value="Sign-in">
+    </form>
+       <p class="text">Already an user?<a class="link" href="../index.html">Login</a></p>
+    
+
+</div>
+</body>
+</html>
